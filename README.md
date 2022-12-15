@@ -18,6 +18,8 @@ npm install
 ## screenshots
 
 ![Alt text](/static/screenshot1.png?raw=true "step 1")
+![Alt text](/static/screenshot2.png?raw=true "step 2")
+![Alt text](/static/screenshot3.png?raw=true "step 3")
 
 ## Author
 
