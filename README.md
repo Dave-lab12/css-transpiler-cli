@@ -15,6 +15,9 @@
 ```sh
 npm install
 ```
+## screenshots
+
+![Alt text](/static/screenshot1.png?raw=true "step 1")
 
 ## Author
 
