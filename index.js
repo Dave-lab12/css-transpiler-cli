@@ -8,9 +8,6 @@ import { createSpinner } from "nanospinner";
 import { transpile } from './transpiler.js';
 
 let data;
-
-console.log(path.dirname(""))
-
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms))
 const spinner = createSpinner("compiling css 🔥")
 async function work() {
@@ -26,13 +23,12 @@ async function work() {
 2.Give the folder directory to the prompt (if noting provided it will default to the dir the app is launched)
 3.The tool looks for files recursively so beware
 4.It stores old css file using {filename}.old.css
-
     `)
 }
 await work()
 
 async function getPath() {
-    const path = await inquirer.prompt({
+    const cssPath = await inquirer.prompt({
         name: "cssLocation",
         type: "input",
         message: "Location to your css files",
@@ -40,7 +36,7 @@ async function getPath() {
             return path.dirname("")
         }
     })
-    data = path
+    data = cssPath
 }
 
 await getPath()
